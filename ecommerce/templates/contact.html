@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+
+{% block 'main' %}
+<div class="row">
+    <div class="col-md-4 mx-auto my-5">
+        <h5>Contact Us</h5>
+        <p>Please reach out to us on:</p>
+        <p>Our toll free number - 1800-654-321</p>
+        <p>Our support email id - support@petstore.com</p>
+        <p>Address: Petfully Yours Private Limited 837/1 Binnamangala 1st Stage, 100ft Road, Indiranagar, Bangalore 38 F12, Bangalore, Karnataka, India 560038</p>
+        <h3 class="mb-5"><i>If you want,you can also Write us Sirectly here</i></h3>
+        <form method="POST">
+           
+            <div class="mb-3">
+                <label for="Input1" class="form-label">EMAIL</label>
+                <input type="email" class="form-control" id="Input1"name="uemail">
+              </div>
+              <div class="mb-3">
+                <label for="Input2" class="form-label">PHONE NUMBER</label>
+                <input type="number" class="form-control" id="Input2" name="unum">
+              </div> 
+
+              <div class="mb-3">
+                <label for="Input3" class="form-label">FIRST NAME</label>
+                <input type="text" class="form-control" id="Input3" name="ufname">
+              </div> 
+
+              <div class="mb-3">
+                <label for="Input2" class="form-label">LAST NAME</label>
+                <input type="text" class="form-control" id="Input4" name="ulname">
+              </div> 
+
+              <div class="mb-3">
+                <label for="Input2" class="form-label">MESSAGE</label>
+                <input type="text" class="form-control" id="Input4" name="umess">
+              </div>
+            
+              <div class="mb-3">
+                <input type="submit" class="btn btn-danger" value="submit">
+                
+              </div>   
+        </form>
+    </div>
+  
+
+</div>
+
+</div>
+
+
+{% endblock 'main' %}

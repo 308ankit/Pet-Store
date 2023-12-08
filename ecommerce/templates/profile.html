@@ -1,0 +1,27 @@
+{% include 'header.html' %}
+
+{% block 'main' %}
+<form method="POST">
+    {% csrf_token %}
+      <div class="mb-3">
+          <label for="Input1" class="form-label">Username</label>
+          <input type="email" class="form-control" id="Input1" placeholder="name@example.com" name="uname">
+      </div>
+      <div class="mb-3">
+          <label for="Input2" class="form-label">Password</label>
+          <input type="password" class="form-control" id="Input2" name="upass">
+      </div>
+      <div class="mb-3">
+          <label for="Input3" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="Input3" name="ucpass">
+      </div>
+      <div class="mb-3">
+          <input type="submit" class="btn btn-success" value="Register">
+          Already User?&nbsp;&nbsp; <a href="/login">Login</a>
+      </div>
+  </form>
+
+{% endblock 'main' %}
+
+
+{% include 'footer.html' %}
